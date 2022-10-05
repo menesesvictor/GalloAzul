@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Rosticería "El Gallo Azul"</title>
+  <link  rel="icon"   href="assets/img/gallo.png" type="image/png"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/materialize/css/materialize.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/fontawesome-5.15/css/all.css">
+
+
+  <!--mapas-->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://code.highcharts.com/maps/highmaps.js"></script>
+  <script src="https://code.highcharts.com/maps/modules/exporting.js"></script>
+  <script src="https://code.highcharts.com/mapdata/countries/mx/mx-all.js"></script>
+  <script src="js/mapa.js"></script>
+
+<!--graficas-->
+  
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+  <script src="https://code.highcharts.com/modules/series-label.js"></script>
+  <script src="https://code.highcharts.com/modules/exporting.js"></script>
+  <script src="https://code.highcharts.com/modules/export-data.js"></script>
+  <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+  <script src="https://code.highcharts.com/modules/data.js"></script>
+  <script src="https://code.highcharts.com/modules/drilldown.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="css/estilos_adicionales.css">
+
+  <script type="text/javascript" src="css/materialize/js/materialize.js"></script>
+
+  <script type="text/javascript" src="js/funciones_adicionales.js"></script>
+
+  
+  
+  <script type="text/javascript" src="js/tooltipster-master/dist/js/tooltipster.bundle.js"></script>
+</head>
+<body id="contenido7">
+ <nav>
+  <div class="nav-wrapper red">
+    <a class="responsive-img" href="index.html"><img src="https://mistoragevmz.blob.core.windows.net/imagenes/logo.jpg" class="img-fluid rounded"></a>
+    <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    <ul id="barra" class="right hide-on-med-and-down">
+        <li><a href="index.html">Inicio</a></li>
+        <li class="active"><a href="historia.html">Sobre nosotros</a></li>
+        <li><a href="#acercaDe">Historia</a></li>
+        <li><a href="#barras">Productos más vendidos</a></li>
+        <li><a href="#pieEstilos">Estados con Mayores Ventas</a></li>
+        <li><a href="#mapa">Sucursales</a></li>
+        <li><a href="sub.html">Suscribete</a></li>
+      </ul>
+  </div>
+ </nav>
+ <i class="fas fa-arrow-circle-up ir-arriba"></i>
+ <ul id="slide-out" class="sidenav">
+    <li><div class="user-view">
+      <div class="background">
+        <img src="https://mistoragevmz.blob.core.windows.net/imagenes/fondo.jpg">
+      </div>
+      <a href="#user"><img class="responsive-img" src="https://mistoragevmz.blob.core.windows.net/imagenes/gallo.png"></a>
+      <a href="#name"><span class="white-text name">¿Necesitas mas informacion?</span></a>
+      <a href="#name"><span class="white-text name">Contactanos:</span></a>
+      <a href="#email"><span class="white-text email">victormeneses222@gmail.com</span></a>
+      <a href="#email"><span class="white-text email">55-27-13-13-58</span></a>
+    </div></li>
+    <li><a class="waves-effect" href="index.html"><i class="fas fa-home fa-2x"></i>Inicio</a></li>
+    <li><a class="waves-effect" href="historia.html"><i class="fas fa-scroll fa-2x"></i>Sobre nosotros</a></li>
+    <li><a class="waves-effect" href="#acercaDe"><i class="fas fa-book fa-2x"></i>Historia</a>
+    <li><a class="waves-effect" href="#barras"><i class="far fa-chart-bar fa-2x"></i>Productos más vendidos</a>
+    <li><a class="waves-effect" href="#pieEstilos"><i class="fas fa-chart-pie fa-2x"></i>Estados con Mayores ventas</a>
+    <li><a class="waves-effect" href="#mapa"><i class="fas fa-map-marked-alt fa-2x"></i>Sucursales</a>
+    <li><a class="waves-effect" href="sub.html"><i class="fas fa-journal-whills fa-2x"></i>Suscribete</a></li>
+  </ul>
+<form id="contenido7">
+  <section id="acercaDe">
+  <div class="container">
+   <div class="row">
+     <div class="col-12 center-align">
+       <h1 class="titulo6">¿Quienes Somos?</h1>
+        <i class="fas fa-drumstick-bite fa-3x titulo6"></i>
+     </div>
+   </div>
+   <div class="row">
+    <div class="col s12 m6 l4 xl4">
+      <img src="https://mistoragevmz.blob.core.windows.net/imagenes/h1.jpg" class="responsive-img materialboxed">
+    </div>
+      <div class="col s12 m6 l4 xl4">
+      <img src="https://mistoragevmz.blob.core.windows.net/imagenes/h2.jpg" class="responsive-img materialboxed">
+    </div>
+      <div class="col s12 m6 l4 xl4">
+      <img src="https://mistoragevmz.blob.core.windows.net/imagenes/h3.jpg" class="responsive-img materialboxed">
+    </div>
+   </div>
+   <br>
+      <br>
+   <div class="row">
+     <div class="col-12">
+      <p id="p1">
+       Rosticeria “El Gallo Azul” ha sido el sabor preferido de la gente por mas de 20 años mediante sus recetas originales y el sabor de pollo casero, acostumbrado en los pueblos de la región.
+    Las variedades de sus estilos de preparar pollo rostizado, se han catalogado como los favoritos para quienes buscan lo mejor de toda ocasión especial.
+    Desde un 13 de Septiembre de 1990; su propietario Victor dio por hecho el contar con su propio negocio, meta que se había establecido desde los 16 años de edad. Demostró todos sus conocimientos en su nuevo negocio, el cual se ha dado conocer por su importante crecimiento en la ciudad, conquistando el paladar de todas las familias mexicanas.
+
+    Desde niño, su propietario el Señor Victor, ha sido gente de trabajo, aprendió el oficio de panadero.
+    Al crecer tuvo que emplearse como lavaplatos, taquero y cocinero. Por fin el 13 de Septiembre de 1990, apenas con 25 años de edad hizo realidad su sueño, abrió su negocio en la calle Luis Cabrera #471 en la Colonia Roma. 
+
+    Ya ahora cuenta con mássucursales, que este éxito a sido solo, gracias a la bendición divina y la constancia en el trabajo, asi como el conservar el inigualable sabor de El Gallo Azul.
+       </p>
+     </div>
+     <br>
+      <br>
+      <br>
+      <br>
+   </div> 
+  </div>
+</section>
+
+<section id="barras">
+  <div class="container">
+    <div class="row">
+      <div class="col s12 center-align">
+        <h1>Productos más vendidos</h1>
+      </div>
+    </div>
+    <div class="col s12">
+      <figure class="highcharts-figure">
+  <div id="container2"></div>
+  <p class="highcharts-description">
+  </p>
+</figure>
+    </div>
+  </div>
+</section>
+
+<section id="pieEstilos">
+  <div class="container4">
+    <div class="row">
+      <div class="col s12 center-align">
+        <h1>Estados con mayores ventas</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s12">
+        <figure class="highcharts-figure">
+  <div id="container4"></div>
+  <p class="highcharts-description">
+  </p>
+</figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="mapa">
+  <div class="container">
+    <div class="row">
+      <div class="col s12 center-align">
+        <h1>Sucursales</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s12">
+        <div id="mapaMexico"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</form>
+<footer>
+    <div class="container">
+      <div class="row">
+        <div class="col s12 center-align">
+          <a href="https://www.facebook.com/Rosticeria-El-Gallo-Azul-104927575372571" target="_blank"><i class="fab fa-facebook-square facebook tooltip" title="Facebook"></i></a>
+          <a href="https://twitter.com/GALLOAZULR" target="_blank"><i class="fab fa-twitter-square twitter tooltip" title="Twitter"></i></a>
+          <a href="https://pin.it/5IgJRhm" target="_blank"><i class="fab fa-pinterest-square pinterest tooltip" title="Pinterest"></i></a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 center-align">
+          <p>Copyright &copy; Victor Meneses Zapata todos los derechos reservados</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+ 
+ <!--librerias para formulario-->
+
+  </body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Rosticería "El Gallo Azul"</title>
+  <link  rel="icon"   href="assets/img/gallo.png" type="image/png"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/materialize/css/materialize.css">
+  <script src="https://unpkg.com/typeit@8.0.3/dist/index.umd.js"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/fontawesome-5.15/css/all.css">
+  
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+  <script type="text/javascript" src="js/guardar_comentarios.js"></script>
+  <script type="text/javascript" src="css/materialize/js/materialize.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/estilos_adicionales.css">
+  <script type="text/javascript" src="js/funciones_adicionales.js"></script>
+  <link rel="stylesheet" type="text/css" href="js/tooltipster-master/dist/css/tooltipster.bundle.css">
+  <script type="text/javascript" src="js/tooltipster-master/dist/js/tooltipster.bundle.js"></script>
+</head>
+<body>
+ <nav>
+  <div class="nav-wrapper red">
+    <a class="responsive-img" href="index.html"><img src="https://mistoragevmz.blob.core.windows.net/imagenes/logo.jpg" class="img-fluid rounded"></a>
+    <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    <ul id="barra" class="right hide-on-med-and-down">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="historia.html">Sobre nosotros</a></li>
+        <li class="active"><a href="sub.html">Suscribete</a></li>
+      </ul>
+  </div>
+ </nav>
+ <i class="fas fa-arrow-circle-up ir-arriba"></i>
+ <ul id="slide-out" class="sidenav">
+    <li><div class="user-view">
+      <div class="background">
+        <img src="https://mistoragevmz.blob.core.windows.net/imagenes/fondo.jpg">
+      </div>
+      <a href="#user"><img class="responsive-img" src="assets/img/gallo.png"></a>
+      <a href="#name"><span class="white-text name">¿Necesitas mas informacion?</span></a>
+      <a href="#name"><span class="white-text name">Contactanos:</span></a>
+      <a href="#email"><span class="white-text email">victormeneses222@gmail.com</span></a>
+      <a href="#email"><span class="white-text email">55-27-13-13-58</span></a>
+    </div></li>
+    <li><a class="waves-effect" href="index.html"><i class="fas fa-home fa-2x"></i>Inicio</a></li>
+    <li><a class="waves-effect" href="historia.html"><i class="fas fa-scroll fa-2x"></i>Sobre nosotros</a></li>
+    <li><a class="waves-effect" href="sub.html"><i class="fas fa-journal-whills fa-2x"></i>Suscribete</a></li>
+  </ul>
+
+  <form id="contenido6">
+ <div class="container">
+  <div class="row">
+    <div class="col s12 center-align">
+      <p id="titsub" class="titsub"></p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col s12">
+      <i class="material-icons iconn">accessibility</i>
+      <!--label>Nombre:</label-->
+      <input type="text" id="nombre" name="nombre" placeholder="Nombre Completo." class="validate" required="" data-length="80" maxlength="80" pattern="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]{2,80}">
+      <span class="helper-text" data-error="Incorrecto" data-success="Correcto"></span>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col s12">
+      <i class="material-icons icont">contact_phone</i>
+      <!--label>Telefono:</label-->
+      <input type="text" id="telefono" name="telefono" placeholder="Telefono." class="validate" required="" data-length="10" maxlength="10" pattern="[0-9]{10}">
+      <span class="helper-text" data-error="Incorrecto" data-success="Correcto"></span>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col s12">
+      <i class="material-icons icong">wc</i>
+      <select id="genero" name="genero" required="" class="validate">
+        <option value="">[Selecciona tu genero]</option>
+        <option value="F" data-icon="assets/img/avatarMujerSinLentes200.png">Femenino</option>
+        <option value="M" data-icon="assets/img/avatarHombre200.png">Masculino</option>
+        <span class="helper-text" data-error="Incorrecto" data-success="Correcto"></span>
+      </select>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col s12">
+      <i class="material-icons icone">email</i>
+      <!--label>Email:</label-->
+      <input type="email" id="email" name="email" placeholder="Correo Electronico." class="validate" required="" data-length="50" maxlength="50" pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$">
+      <span class="helper-text" data-error="Incorrecto" data-success="Correcto"></span>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col s12">
+      <i class="material-icons iconc">comment</i>
+      <!--label>Comentarios:</label-->
+      <textarea id="comentarios" name="comentarios" placeholder="Quejas o Sugerencias." class="materialize-textarea" data-length="200" maxlength="200" required="" class="validate" pattern="[A-Za-z\s]{50,200}"></textarea>
+      <span class="helper-text" data-error="Incorrecto" data-success="Correcto"></span>
+    </div>
+  </div>
+  <div class="row center-align">
+    <div class="col s6">
+      <input type="button" id="enviar" class="btn green" value="Suscribete">
+    </div>
+    <div class="col s6">
+      <button id="cancelar" class="btn red">Cancelar</button>
+    </div>
+    <br>
+  </div>
+  <br>
+ </div>
+ <div class="container" id="mensajeSuccess">
+   <div class="row">
+     <div class="col s12 center-align">
+       <p class="mensajes">Los datos han sido enviados correctamente</p>
+     </div>
+   </div>
+ </div>
+ <div class="container" id="mensajeError">
+   <div class="row">
+     <div class="col s12 center-align">
+       <p class="mensajee">Los datos no pudieron ser enviados</p>
+     </div>
+   </div>
+ </div>
+ <div class="container" id="mensajeCampo">
+   <div class="row">
+     <div class="col s12 center-align">
+       <p class="mensajec"></p>
+     </div>
+   </div>
+ </div>
+ <br>
+ </form>
+
+ <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col s12 center-align">
+          <a href="https://www.facebook.com/Rosticeria-El-Gallo-Azul-104927575372571" target="_blank"><i class="fab fa-facebook-square facebook tooltip" title="Facebook"></i></a>
+          <a href="https://twitter.com/GALLOAZULR" target="_blank"><i class="fab fa-twitter-square twitter tooltip" title="Twitter"></i></a>
+          <a href="https://pin.it/5IgJRhm" target="_blank"><i class="fab fa-pinterest-square pinterest tooltip" title="Pinterest"></i></a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 center-align">
+          <p>Copyright &copy; Victor Meneses Zapata todos los derechos reservados</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+ 
+ <!--librerias para formulario-->
+
+  </body>
+</html>

@@ -1,0 +1,244 @@
+/*estilos para grafica de pie con estilos*/
+@import 'https://code.highcharts.com/css/highcharts.css';
+
+.highcharts-pie-series .highcharts-point {
+  stroke: #EDE;
+  stroke-width: 2px;
+}
+.highcharts-pie-series .highcharts-data-label-connector {
+  stroke: silver;
+  stroke-dasharray: 2, 2;
+  stroke-width: 2px;
+}
+
+.titulo{
+	color: #FFF300;
+}
+
+.titulo2{
+	color: white;
+}
+
+.titulo3{
+	color: #00FFEC;
+}
+
+.titulo4{
+	color: #FF0000;
+}
+.titulo5{
+	color: brown;
+}
+
+.titulo6{
+	color: black;
+}
+
+.colorIcon{
+	color: orange;
+}
+
+.titsub{
+	font-size: 35px;
+	color: black;
+}
+
+footer{
+  padding: 15px;
+  background-color:#000;
+  color: #fff; 
+}
+
+.facebook{
+	font-size: 50px;
+	color: #4267B2;
+}
+
+.twitter{
+	font-size: 50px;
+	color: #1DA1F2;
+}
+
+.whatsapp{
+	font-size: 50px;
+	color: #25D366;
+}
+
+.pinterest{
+	font-size: 50px;
+	color: #E60023;
+}
+.google{
+	font-size: 50px;
+	color: #DB4437;
+}
+
+form{
+	background-color: #DB4437;
+	font-family: "food";
+}
+
+@font-face{
+	font-family: "food";
+	src:url("../assets/fuentes/Bellfoods.otf");
+}
+
+.t{
+	color: #FFF000 ;
+	font-family: food;
+	font-size: 500%
+}
+
+.t2{
+	color: orange ;
+	font-family: food;
+	font-size: 250%
+}
+
+.t3{
+	color: #45961F  ;
+	font-family: food;
+	font-size: 500%
+}
+
+.t4{
+	color: #FC0F04 ;
+	font-family: food;
+	font-size: 500%
+}
+
+.t5{
+	color: #0413FC  ;
+	font-family: food;
+	font-size: 500%
+}
+
+.t6{
+	color: #60CF34 ;
+	font-family: food;
+	font-size: 250%
+}
+.t7{
+	color: #DA1DA9 ;
+	font-family: food;
+	font-size: 250%
+}
+
+#p1{
+	font-size: 180%
+}
+form#contenido2{
+	background-color: green;
+	font-family: "food";
+	color: #EAEAEA;
+}
+
+form#contenido3{
+	background-color: #E4007C;
+	font-family: "food";
+	color: #E4007C;
+}
+form#contenido4{
+	background-color: yellow;
+	font-family: "food";
+	color: #FF0000;
+}
+form#contenido5{
+	background-color: #D2BA82;
+}
+form#contenido6{
+	background-color: #1478E9;
+	font-family: "food";
+	font-size: 180%
+}
+#contenido7{
+	background-color: #C5F3ED ;
+}
+.t8{
+	color: #EAEAEA;
+	font-size: 180%
+}
+
+.t9{
+	color: #E4007C;
+	font-size: 180%
+}
+.t10{
+	color: #FF0000;
+	font-size: 180%
+}
+
+.ir-arriba 
+{display:none;
+padding:20px;	
+	
+font-size:55px;	
+color:#00FFEC;	
+cursor:pointer;	
+position: fixed;	
+bottom:20px;	
+right:20px;}
+
+.iconn{
+	font-size: 45px;
+	color: #18ffff;
+}
+
+.icont{
+	font-size: 45px;
+	color: #ec407a;
+}
+
+.icong{
+	font-size: 45px;
+	color: #ab47bc;
+}
+
+.icone{
+	font-size: 45px;
+	color: #f44336;
+}
+
+.icond{
+	font-size: 45px;
+	color: #2196f3;
+}
+
+.iconc{
+	font-size: 45px;
+	color: #eeff41 ;
+}
+
+/*estilos para grafica de barras*/
+
+#container2 {
+  height: 400px;
+}
+
+/*Mapa*/
+#mapaMexico {
+    height: 500px;
+    min-width: 310px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.loading {
+    margin-top: 10em;
+    text-align: center;
+    color: gray;
+}
+
+.mensajes {
+	color: green ;
+	font-size: 40px;
+}
+
+.mensajee {
+	color: red ;
+	font-size: 40px;
+}
+.mensajec {
+	color: red ;
+	font-size: 40px;
+}
